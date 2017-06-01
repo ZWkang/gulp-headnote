@@ -1,0 +1,27 @@
+{
+  "name": "gulp-headnote",
+  "version": "0.1.0",
+  "description": "A gulp plugin for converting custom objects into head comments",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZWkang/gulp-headnote.git"
+  },
+  "keywords": [
+    "gulp",
+    "comment"
+  ],
+  "dependencies": {
+    "gulp-util": "^3.0.8",
+    "through2": "^2.0.3"
+  },
+  "author": "ZWkang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZWkang/gulp-headnote/issues"
+  },
+  "homepage": "https://github.com/ZWkang/gulp-headnote#readme"
+}
