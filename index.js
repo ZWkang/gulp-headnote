@@ -8,16 +8,14 @@ const PLUGIN_NAME = 'gulp-headnote';
 module.exports = function (options,hash) {
     return through.obj(function (file, enc, cb) {
         var content;
-        
         if (file.isNull()) {
             this.push(file);
             return cb();
         }
         if (file.isStream()) {
-            this.emit('error', new gutil.PluginError(PLUGIN_NAME, 'Streaming not supported'));
+            this.emit('error', new gutil.PluginError(PLUGIN_NAME, ' Streaming not supported'));
             return cb();
         }
-
         if(Object.prototype.toString.call(options)!=='[object Object]'){
             gutil.log(gutil.colors.red('options is not a object'));
         }else{
@@ -25,7 +23,6 @@ module.exports = function (options,hash) {
             content = new Buffer(content,'UTF-8')
             file.contents = Buffer.concat([content,file.contents])
         }
-
         this.push(file);
         cb();
     });

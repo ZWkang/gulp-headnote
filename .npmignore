@@ -1,3 +1,6 @@
 examples/
 test/
+/*.log
 .travis.yml
+node_modules
+.git
