@@ -4,7 +4,7 @@
   "description": "A gulp plugin for converting custom objects into head comments",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/main.js"
+    "test": "mocha test.js"
   },
   "repository": {
     "type": "git",
