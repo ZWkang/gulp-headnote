@@ -1,7 +1,7 @@
 var assert = require('assert');
 var es = require('event-stream');
 var File = require('vinyl');
-var prefixer = require('../');
+var prefixer = require('./index.js');
 var h = require('crypto').createHash('md5');
 
 describe('gulp-headnote', function() {
